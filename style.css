@@ -1,0 +1,233 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 20px;
+    letter-spacing: 1.5pt;
+    font-weight: 900;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 0pt;
+    font-weight: 500;
+}
+
+h2.subheading {
+    margin-top: 0px;
+    letter-spacing: 0.1pt;
+    margin-bottom: 0px;
+}
+
+.text-content {
+    font-size: 30px;
+    line-height: 48px;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.light {
+    font-weight: 100;
+}
+
+ul.b {
+    list-style-type: square;
+    list-style-position: outside;
+    font-size: 12px;
+    color: darkgray;
+}
+
+.icon-space {
+    padding-left: 6px;
+}
+
+.nav-item {
+    font-weight: 400;
+    font-size: 14;
+    line-height: 20px;
+}
+
+.navbar-brand {
+    letter-spacing: 1.5pt;
+    font-weight: 900;
+}
+
+/* .navbar-nav {
+    padding-top: 5px;
+} */
+
+
+.main-content {
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    /* padding-left: 270px; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.speech {
+    padding-top: 15vh;
+    padding-bottom: 20vh;
+    margin-left: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sidebar {
+    width: 310px; 
+    max-width: 350px;
+    min-width: 220px;
+    height:100vh;
+    padding-left: 45px;
+    display: flex;
+    position: fixed;
+    flex-direction: vertical;
+    justify-content: space-between;
+    border-right: solid black 1pt;
+    background-color: white;
+    z-index: 1000;
+
+}
+
+.three-icons {
+    margin-left: -30px;
+    width: 100%;
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-evenly;
+}
+
+.icon {
+    width:30px;
+    height:30px;
+}
+
+.big-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+}
+
+.tall-image {
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+}
+
+.header {
+    margin-bottom: 50px;
+    width:120%;
+    padding-top: 35px;
+    padding-bottom:35px;
+    /* border-top: solid black 1px;
+    border-bottom: solid black 1px; */
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* MEDIA */
+
+@media only screen and (max-width: 1026px) {
+    #bignav {
+        display: none;
+    }
+    .center-box {
+        flex-direction: column;
+    }
+    .text-content {
+        font-size: 2.5ch;
+        line-height: 38px;
+    }
+    #littlenav {
+        display: true;
+    }
+}
+
+@media only screen and (min-width: 1026px) {
+    #bignav {
+        display: true;
+    }
+    .center-box {
+        flex-direction: row;
+    }
+    #littlenav {
+        display: none;
+    }
+}
+
+/* INTERNET FILES */
+
+
+.box2 {
+    width: 450px;
+    /* margin: 50px auto; */
+    border-radius: 5px;
+    border: 1.5px solid darkgrey;
+    padding: 40px;
+    position: relative;
+    font-weight:300;
+  }
+  
+  
+  /* speech bubble 9 */
+  
+  .sb9:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid darkgray;
+    border-bottom: 10px solid transparent;
+    right: 75%;
+    bottom: -21px;
+  }
+  
+  .sb9:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    right: 75%;
+    bottom: -19px;
+  }
