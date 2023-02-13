@@ -35,6 +35,15 @@ h2.subheading {
     text-align: center;
 }
 
+.arrow {
+    position: fixed;
+    bottom: 70px;
+    left: 25vw;
+    font-size: 30px;
+    font-weight: 200;
+    color: white;
+}
+
 .active {
     font-weight: 500;
 }
