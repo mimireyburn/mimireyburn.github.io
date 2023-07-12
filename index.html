@@ -4,11 +4,14 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Cherry+Bomb+One&family=Major+Mono+Display&family=Merriweather:wght@900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 <!-- Local links -->
 <link rel="stylesheet" type="text/css" href="./style.css"  />
@@ -23,178 +26,41 @@
 </head>
 
 <body>
-  <!-- SIDE-NAV SMALL -->
+<!--Navigation bar-->
+<div id="nav-placeholder"></div>
 
-<nav class="navbar navbar-default navbar-fixed-top bg-light text-dark" id="littlenav">
-  <div class="container-fluid" style="padding-left: 45px; padding-top: 10px; padding-bottom: 10px;">
-    <a class="navbar-brand h1" href="index.html">MIMI REYBURN</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <h2>I'm working on this: </h2>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="ion.html"> 🔋  
-            <span class="icon-space">eBike Blackbox</span>
-            <span class="light">| 2023</span>
-          </a>
-          <ul class="b">
-            <li>
-              Innovate UK-funded Battery Tech
-            </li>
-            <li>
-              Hardware + Software Engineer
-            </li>
-          </ul>
-        </li>
-        <h2>A few things I've done: </h2>
-        <li class="nav-item">
-          <a class="nav-link" href="pk.html"> 🥕 
-            <span class="icon-space">Pocket Kitchen</span>
-            <span class="light">| 2023</span>
-          </a>
-          <ul class="b">
-            <li>
-              Computer Vision + IoT Fridge
-            </li>
-            <li>
-              Master's Project
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="emotech.html"> 💬 
-            <span class="icon-space">Emotech</span>
-            <span class="light">| 2021</span>
-          </a>
-          <ul class="b">
-            <li>
-              Custom dataset for AI Speech Tech
-            </li>
-            <li>
-              Project Management + Python
-            </li>
-          </ul>
-        </li>
-      </ul>
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
 
-      <div class="three-icons" style="padding-top: 30px; padding-bottom: 20px;">
-        <a href="https://github.com/mimireyburn" target=”_blank”>
-          <img class="icon" src="images/github.png">
-        </a>
-        <a href="mailto:mimireyburn@gmail.com?subject=Hello!">
-          <img class="icon" src="images/email.png">
-        </a>
-        <a href="https://www.linkedin.com/in/mimireyburn/" target=”_blank”>
-          <img class="icon" src="images/linkedin.png"">
-        </a>
-      </div>
-
+    <div class="container">
+        <div class="image-container"> 
+            <div class="box2 sb9">
+                <p>
+                    Hi - I'm <span class="bold">Mimi</span>.
+                </p>
+                <p>
+                    I'm a user-obsessed <span class="bold">engineer / coder / maker</span>. 
+                </p>
+                <p>
+                    Recently, I finished a 6-month sprint at <a href="ion.html"><span class="g bold">ION-O</span></a>
+                    integrating data-driven optimisation into micro-mobility vehicles.
+                    I also work on projects like <a href="wthr.html"><span class="b bold">this one</span></a>.
+                </p>
+                <p>
+                    I have a Master’s in  <a href="https://www.imperial.ac.uk/study/courses/undergraduate/design-engineering/" target="_blank"><span class="p bold">Design Engineering</span></a>
+                     from Imperial College London - you can check out my final project <a href="pk.html"><span class="y bold">here</span></a>.
+                </p>
+                <p>
+                    I’m curious about all kinds of tech - if you have any questions, please <a href="mailto:mimireyburn@gmail.com?subject=Hello!"><span class="g bold">get in touch ></span></a>
+                </p>
+                <p>
+                    <a href="portfolio.html"><span class="b bold">View my work ></span></a>
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
-</nav>
-
-<!-- SIDE-NAV BIG-->
-<section class="sidebar" id="bignav" style="padding-right: 20px;">
-  <nav class="navbar">
-    <div>
-      <div class="container-fluid">
-        <a class="navbar-brand h1" href="index.html">MIMI REYBURN</a>
-        <h2>I'm working on this: </h2>
-      </div>
-      
-      <div class="container-fluid">
-        
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="ion.html"> 🔋  
-              <span class="icon-space">eBike Blackbox</span>
-              <span class="light">| 2022</span>
-            </a>
-            <ul class="b">
-              <li>
-                Innovate UK-funded Battery Tech
-              </li>
-              <li>
-                Hardware + Software Engineer
-              </li>
-            </ul>
-          </li>
-          <h2>A few things I've done: </h2>
-          <li class="nav-item">
-            <a class="nav-link" href="pk.html"> 🥕 
-              <span class="icon-space">Pocket Kitchen</span>
-              <span class="light">| 2022</span>
-            </a>
-            <ul class="b">
-              <li>
-                Computer Vision + IoT Fridge
-              </li>
-              <li>
-                Master's Project
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="emotech.html"> 💬 
-              <span class="icon-space">Emotech</span>
-              <span class="light">| 2021</span>
-            </a>
-            <ul class="b">
-              <li>
-                Custom dataset for AI Speech Tech
-              </li>
-              <li>
-                Project Management + Python
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  <div class="three-icons">
-    <a href="https://github.com/mimireyburn" target=”_blank”>
-      <img class="icon" src="images/github.png">
-    </a>
-    <a href="mailto:mimireyburn@gmail.com?subject=Hello!">
-      <img class="icon" src="images/email.png">
-    </a>
-    <a href="https://www.linkedin.com/in/mimireyburn/" target=”_blank”>
-      <img class="icon" src="images/linkedin.png"">
-    </a>
-  </div>
-</nav>
-
-
-
-</section>
-
-  <!-- MAIN-CONTENT -->
-
-<section class="main-content">
-
-  <div class="box2 sb9">
-    <p>
-      Hi, my name is <span class="bold">Mimi</span>.
-    </p>
-    <p>
-      I’m an <span class="bold">engineer / designer / coder</span> + <a href="list.html" style="color: lightgrey;" target="_blank">useless-website enthusiast.</a>
-    </p>
-    <p>
-      Currently, I work at <a class="bold" style="color:#afbc26" href="ion.html">ION-O</a>, making cool things happen in battery tech. 
-      Before, I did design, coding and project management at <a class="bold" style="color:#5fafe0" href="emotech.html">Emotech</a>. 
-      I also taught Arduino + electronics. 
-    </p>
-    <p>
-      I have a Master’s in <a class="bold" style="color:#f5a0b5" href="https://www.imperial.ac.uk/design-engineering/study/meng/" target="_blank">Design Engineering</a> from Imperial College London. You can check out my solo project <a class="bold" style="color:#8cc0b4" href="pk.html">here</a>. 
-    </p>
-    <p>
-      I’m curious about all kinds of tech - if you have any questions, please <a class="bold" style="color:#fdc357" href="mailto:mimireyburn@gmail.com">get in touch</a>.
-    </p>
-  </div>
-
-</section>
-
 </body>
