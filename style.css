@@ -1,10 +1,11 @@
 :root {
-    --myblue: #5fafe0;
-    --myyellow: #fdc357;
-    --mygreen: #afbc26;
-    --mypink: #f5a0b5;
+    --myblue: #196899;
+    --myyellow: #efb43e;
+    --mygreen: #6D7518;
+    --mypink: #C73A5C;
     --myblack: #292929;
     --mywhite: #ffffff;
+    --mygrey: #bfbcbc;
 }
 
 /* font-family: 'Major Mono Display', monospace; */
@@ -16,6 +17,7 @@ body {
     align-items: center;
     min-height:100vh;
     width: 100vw;
+    background-color: whitesmoke;
 }
 
 a {
@@ -24,7 +26,8 @@ a {
 
 a:hover {
     font-style: italic;
-    
+    cursor: pointer;
+
 }
 
 h1 {
@@ -76,7 +79,7 @@ h5 {
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 32px;
     color: var(--myblack);
     font-weight: 300;
@@ -88,9 +91,13 @@ p {
 }
 
 .icon {
-    width: 100px;
-    height: 100px;
-    padding: 5px;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin-top: 15px;
+    margin-left: -1.5%;
+    border: 1px solid var(--mygrey);
+    border-radius: 50%;
 }
 
 .emoji-icon {
@@ -321,18 +328,19 @@ ul {
 }
 
 .bold {
-    font-weight: 500
+    font-weight: 500;
 }
 
 
 .box2 {
-    width: 450px;
+    width: 750px;
     /* margin: 50px auto; */
-    border-radius: 5px;
+    border-radius: 15px;
     border: 1px solid var(--myblack);
-    padding: 35px;
+    padding: 30px 35px;
     position: relative;
-    font-weight:300;
+    font-weight: 300;
+    background-color: var(--mywhite);
   }
   
   
@@ -347,8 +355,9 @@ ul {
     border-right: 10px solid transparent;
     border-top: 10px solid var(--myblack);
     border-bottom: 10px solid transparent;
-    right: 75%;
-    bottom: -20.5px;
+    right: 90%;
+    bottom: -21px;
+
   }
   
   .sb9:after {
@@ -358,15 +367,16 @@ ul {
     position: absolute;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #fff;
+    border-top: 10px solid var(--mywhite);
     border-bottom: 10px solid transparent;
-    right: 75%;
-    bottom: -19px;
+    right: 90%;
+    bottom: -19.5px;   
+    
   }
 
 /* MEDIA */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .container {
         width: 95vw;
     }
@@ -394,7 +404,12 @@ ul {
     .box2 {
         width: 90vw;
     }
-    p {
-        font-size: 16px;
+
+    .icon {
+        width: 50px;
+        height: 50px;
+        padding: 0px;
+        right: 83.5%;
+        position: absolute;
     }
 }
