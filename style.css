@@ -95,7 +95,7 @@ p {
     height: 50px;
     padding: 0px;
     margin-top: 15px;
-    margin-left: -1.5%;
+    margin-left:-0.8%;
     border: 1px solid var(--mygrey);
     border-radius: 50%;
 }
