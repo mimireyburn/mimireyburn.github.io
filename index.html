@@ -1,53 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Cherry+Bomb+One&family=DM+Serif+Text&family=Major+Mono+Display&family=Merriweather:wght@900&family=Pacifico&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-<!-- Local links -->
-<link rel="stylesheet" type="text/css" href="./style.css"  />
-
-<!-- Meta Data -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
 <head>
-  <title>Mimi Reyburn | Portfolio </title>
-  <link rel="icon" href="favicon.ico?v=1" type="image/x-icon">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-size: 48px;
+        }   
 
+        body {
+            background-color: #fefefe;
+            margin: 0;
+            padding: 1vh 11vw 5vh 7vw;
+        }
+
+        p {
+            color: #e34685;
+            font-family: 'Lexend', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.3rem;
+            text-indent: -1.9em;
+            padding-left: 1em;
+
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        a {
+            color : #e34685;
+            transition: color 0.4s ease;
+        }
+        
+        a:hover {
+            color : #b7376a;
+            transition: color 0.7s ease;
+        }
+
+        .hidden {
+            color: whitesmoke;
+            transition: color 0.8s ease;
+        }
+
+        .hidden:hover {
+            color: #e34685;
+            transition: color 0.8s ease;
+            
+        }
+
+        /* Font size for tablet */
+        @media screen and (max-width: 768px) {
+            html {
+                font-size: 28px;
+            }
+        }
+
+        /* Font size for mobile */
+        @media screen and (max-width: 480px) {
+            html {
+                font-size: 24px;
+            }
+        }
+
+        p:nth-child(1) {
+            animation-delay: 0.3s;
+        }
+
+        p:nth-child(2) {
+            animation-delay: 0.6s;
+        }
+        
+        p:nth-child(3) {
+            animation-delay: 0.9s;
+        }
+
+        p:nth-child(4) {
+            animation-delay: 1.2s;
+        }
+
+        p:nth-child(5) {
+            animation-delay: 1.5s;
+        }
+
+        p:nth-child(6) {
+            animation-delay: 1.8s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <title>Hi! I'm Mimi | ML Engineer</title>
+    <link rel="icon" href="favicon.ico?v=1" type="image/x-icon">
+</head>
 <body>
-    <div class="container">
-        <div class="image-container"> 
-            <div class="box2 sb9">
-                <p>
-                    <span class="bold">Hey, I'm Mimi!</span>
-                </p>
-                <p>
-                    I am a Machine Learning Engineer based in London. 
-                </p>
-                <p>
-                    I trained in <a href="https://www.foundersandcoders.com/ml/" target="_blank"><span class="bold p">Applied ML MSc</span></a> at the MLX Institute. Here I've embarked on <a href="https://github.com/mimireyburn/TheOnion" target="_blank"><span class="bold p">fine-tuning Llama-2 7B</span></a>, writing my own <a href="https://github.com/mimireyburn/MLX_Models" target="_blank"><span class="bold p">GPT</span></a> and much more. 
-                </p>
-                <p>
-                    Having studied at Imperial College, I also have a degree in <a href="https://www.imperial.ac.uk/study/courses/undergraduate/design-engineering/"  target="_blank"><span class="bold b">Design Engineering MEng</span></a>, where I built a <a href="https://drive.google.com/file/d/1hBZ02Ntnyl5bSKJgiLAmXmYXe-6rt5m3/view?usp=sharing" target="_blank"><span class="bold b">computer vision smart fridge</span></a>. 
-                </p>
-                <p>
-                    I'm obsessed with human-oriented and generative AI. I always have a project on-the-go; <a href="https://github.com/mimireyburn/LLMyWeather"  target="_blank"><span class="bold g">with friends</span></a> or <a href="https://github.com/mimireyburn/MancalaBot"  target="_blank"><span class="bold g">solo</span></a>.
-                </p>
-                <p>
-                    I am due to start a role soon but I'm always open to new opportunities.
-                </p>
-                <p>
-                    <a href="https://www.linkedin.com/in/mimireyburn"  target="_blank"><span style="text-decoration: underline;" class="y bold">Get in touch -></span></a>
-                </p>
-            </div>
-        </div>
-        <img src="icon.png" class="icon">
-    </div>
+    <p>
+        👋 &nbsp; Hey, I am Mimi!  
+    </p>
+    <p>
+        👩🏻‍💻 &nbsp; I'm a Machine Learning Engineer.  
+    </p>
+    <p>
+        📚 &nbsp; Studying at the <a href="https://www.foundersandcoders.com/ml/" target="_blank">MLX Institute</a>, I specialised in Applied ML; fine-tuning Llama-2 7B, writing my own GPT and much more.
+    </p>
+    <p>
+        💼 &nbsp; My background is in product strategy and rapid prototyping - I studied engineering at <a href="https://www.imperial.ac.uk/study/courses/undergraduate/design-engineering/" target="_blank">Imperial College</a>, tackling the UK's food waste with <a href="files/PocketKitchen.pdf" target="_blank">computer vision</a> for your fridge.
+    </p>
+    <p>
+        🧠 &nbsp; I'm obsessed with human-oriented and generative AI. Check out my latest  <a href="https://www.github.com/mimireyburn" target="_blank">projects -></a>
+    </p>
+    <p>
+        ➡️ &nbsp; Interested in my work? <a href="https://www.linkedin.com/in/mimireyburn"  target="_blank">Let's talk -></a> 
+    </p>
 </body>
+</html>
